@@ -172,7 +172,7 @@ Navigation
     left: 0;
     width: 100%;
     background-color: white;
-    box-shadow: 0 2px 2px salmon;
+    box-shadow: 0 5px 5px salmon;
     z-index: 9999;
 }
 
@@ -280,7 +280,8 @@ td, th {
 
 table{
     width: 80%;
-    margin-left: 10%
+    margin-left: 10%;
+    table-layout: fixed;
 }
 
 .cert td, th{
