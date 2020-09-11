@@ -41,6 +41,11 @@ h2 {
     margin-bottom: 30px;
 }
 
+h3 {
+    word-spacing: 2px;
+    margin-left: 15%;
+}
+
 
 /*
 Paragraphs 
@@ -57,11 +62,11 @@ Timeline
 */
 
 .timeline {
-    width: 100%;
-    max-width: 800px;
-    background: #fff;
+    width: 80%;
+    max-width: 100%;
     padding: 100px 50px;
     position: relative;
+    margin-left: 10%
 }
 
 .timeline::before{
@@ -135,7 +140,6 @@ Timeline
 }
 
 .body ul {
-    color: #aaa;
     padding-left: 0;
     list-style-type: none;
 }
@@ -167,8 +171,8 @@ Navigation
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #0E0B16;
-    box-shadow: 0 2px 2px #a380ff;
+    background-color: white;
+    box-shadow: 0 2px 2px salmon;
     z-index: 9999;
 }
 
@@ -195,6 +199,7 @@ Navigation
 
 .main-nav li a:link, .main-nav li a:visited{
     padding: 8px 0px;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
@@ -203,7 +208,7 @@ Navigation
 }
 
 .main-nav li a:hover, .main-nav li a:active{
-    border-bottom: 2px solid #4717F6;
+    border-bottom: 2px solid salmon;
 }
 
 
@@ -231,36 +236,85 @@ Navigation
 }
 
 @keyframes slideDown {
-  from {
-    opacity: 0;
-    height: 0;
-    padding: 0;
-  }
+    from {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+    }
 
-  to {
-    opacity: 1;
-    height: var(--contentHeight);
-    padding: 20px;
-  }
+    to {
+        opacity: 1;
+        height: var(--contentHeight);
+        padding: 20px;
+    }
 }
 
 @keyframes showContent {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
-  from {
-    opacity: 1;
-  }
+    from {
+        opacity: 1;
+    }
 
-  to {
-    opacity: 0;
-    height: var(--contentHeight);
-    padding: 20px;
-  }
+    to {
+        opacity: 0;
+        height: var(--contentHeight);
+        padding: 20px;
+    }
+}
+
+/*
+Table
+*/
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+}
+
+table{
+    width: 80%;
+    margin-left: 10%
+}
+
+.cert td, th{
+    border: none;
+    padding: 0.5rem;
+}
+
+.cert {
+    margin-left: 15%;
+    margin-bottom: 30px
+}
+
+/*
+Sections
+*/
+
+.section--about-kari{
+    background-image: linear-gradient(to bottom, white , salmon);
+}
+
+.section--work-expereince{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(../img/construction1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.section--projects-worked-on{
+    background-image: linear-gradient(to bottom, white , salmon);
+}
+
+.section--certificates{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../img/study2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
 }
